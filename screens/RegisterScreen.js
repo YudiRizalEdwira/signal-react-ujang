@@ -23,7 +23,7 @@ const RegisterScreen = ({navigation}) => {
         .then((authUser) => {
             authUser.user.updateProfile({
                 displayName: name,
-                photoURL: imageUrl || 'https://i.postimg.cc/gJ3tBTMQ/Who-s-Your-Anime-Boyfriend.png'
+                photoURL: imageUrl || 'https://lastfm.freetls.fastly.net/i/u/ar0/341d3f6461fb4dcccd27f126c8efb519.jpg'
             })
         })
         .catch(error => alert(error.message))
